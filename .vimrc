@@ -62,6 +62,14 @@ let g:move_key_modifier = 'C'
 " Autoclosure of characters
 Plugin 'townk/vim-autoclose'
 
+" Status line
+Plugin 'vim-airline/vim-airline'
+
+" Directory
+Plugin 'scrooloose/nerdtree'
+" autocmd vimenter * NERDTree       " For automatically opening the directory
+map <C-t> :NERDTreeToggle<CR>
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -75,6 +83,7 @@ filetype plugin indent on    " required
 " :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
 "
 
+set mouse=a
 set tabstop=4       " The width of a TAB is set to 4.
                     " Still it is a \t. It is just that
                     " Vim will interpret it to be having
