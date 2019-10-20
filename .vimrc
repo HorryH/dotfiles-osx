@@ -32,9 +32,9 @@ Plugin 'amadeus/vim-evokai'
 
 " Bonne Syntax checker
 Plugin 'scrooloose/syntastic'
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
@@ -67,8 +67,14 @@ Plugin 'vim-airline/vim-airline'
 
 " Directory
 Plugin 'scrooloose/nerdtree'
+let NERDTreeShowHidden=1
 " autocmd vimenter * NERDTree       " For automatically opening the directory
 map <C-t> :NERDTreeToggle<CR>
+
+" Search
+Plugin 'ctrlpvim/ctrlp.vim'
+nnoremap <C-g> :CtrlP<CR>
+nnoremap <C-f> :CtrlPMixed<CR>
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
