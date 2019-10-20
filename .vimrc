@@ -134,8 +134,8 @@ set foldenable
 set foldmethod=marker
 
 " Custom keybindings
-nnoremap <C-o> :tabprevious<CR>
-nnoremap <C-p> :tabnext<CR>
+nnoremap [ :tabprevious<CR>
+nnoremap ] :tabnext<CR>
 nnoremap <C-n> :tabnew<Space>
 " Modifying shift-hjkl to select text
 nnoremap H v
