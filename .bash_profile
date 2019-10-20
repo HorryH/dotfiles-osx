@@ -19,3 +19,4 @@ eval $(thefuck --alias)
 alias f="rg --hidden --"
 alias pp=fuck
 
+source ~/.bashrc
