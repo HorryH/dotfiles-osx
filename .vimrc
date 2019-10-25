@@ -54,6 +54,7 @@ Plugin 'klen/python-mode'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'palantir/tslint'
 Plugin 'pangloss/vim-javascript'
+Plugin 'quramy/tsuquyomi'
 
 " Highlight at cursor
 Plugin 'matze/vim-move'
@@ -69,7 +70,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'scrooloose/nerdtree'
 let NERDTreeShowHidden=1
 " autocmd vimenter * NERDTree       " For automatically opening the directory
-map <C-t> :NERDTreeToggle<CR>
+map <S-t> :NERDTreeToggle<CR>
 
 " Search
 Plugin 'ctrlpvim/ctrlp.vim'
