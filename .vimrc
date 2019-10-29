@@ -138,6 +138,7 @@ set foldmethod=marker
 nnoremap { :tabprevious<CR>
 nnoremap } :tabnext<CR>
 nnoremap <C-n> :tabnew<Space>
+
 " Modifying shift-hjkl to select text
 nnoremap H v
 nnoremap J v
@@ -147,4 +148,10 @@ vnoremap H h
 vnoremap J j
 vnoremap K k
 vnoremap L l
+
+" Custom Commands
+:command -nargs=+ ReplaceAll call ReplaceAll(<f-args>)
+function! ReplaceAll( ... )
+        execute printf('%%s/%s/%s/g', a:1, a:2)
+    endfunction
 

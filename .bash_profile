@@ -15,8 +15,12 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 eval $(thefuck --alias)
+command_exists () {
+    type "$1" &> /dev/null ;
+}
 
 alias f="rg --hidden --"
 alias pp=fuck
+alias so='socli -isq'
 
 [ -f ~/.bashrc ] && source ~/.bashrc
