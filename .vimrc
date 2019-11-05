@@ -28,7 +28,7 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Plugin 'ascenator/L9', {'name': 'newL9'}
 
 " Color scheme
-Plugin 'amadeus/vim-evokai'
+" Plugin 'amadeus/vim-evokai'
 
 " Bonne Syntax checker
 Plugin 'scrooloose/syntastic'
@@ -40,6 +40,12 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+" Async linting
+Plugin 'w0rp/ale'
+
+" Project specific configs
+Plugin 'editorconfig/editorconfig-vim'
 
 " Git helpers
 Plugin 'airblade/vim-gitgutter'
@@ -55,6 +61,7 @@ Plugin 'leafgarland/typescript-vim'
 Plugin 'palantir/tslint'
 Plugin 'pangloss/vim-javascript'
 Plugin 'quramy/tsuquyomi'
+Plugin 'herringtondarkholme/yats.vim'
 
 " Highlight at cursor
 Plugin 'matze/vim-move'
@@ -150,8 +157,8 @@ vnoremap K k
 vnoremap L l
 
 " Custom Commands
-:command -nargs=+ ReplaceAll call ReplaceAll(<f-args>)
+:command! -nargs=+ ReplaceAll call ReplaceAll(<f-args>)
 function! ReplaceAll( ... )
-        execute printf('%%s/%s/%s/g', a:1, a:2)
-    endfunction
+    execute printf('%%s/%s/%s/g', a:1, a:2)
+endfunction
 
