@@ -1,8 +1,5 @@
-
-# Setting PATH for Python 2.7
-# The original version is saved in .bash_profile.pysave
-PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
-export PATH
+# Use Python 3.8
+alias python='/usr/local/bin/python3'
 
 # Case insensitive tabbing
 set completion-ignore-case on
