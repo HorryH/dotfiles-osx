@@ -23,6 +23,7 @@ command_exists () {
 alias f="rg --hidden --"
 alias pp=fuck
 alias so='socli -isq'
+alias ports='lsof -i -P -n | grep LISTEN'
 
 [ -f ~/.bashrc ] && source ~/.bashrc
 source /usr/local/opt/chruby/share/chruby/chruby.sh
