@@ -24,9 +24,8 @@ alias f="rg --hidden --"
 alias pp=fuck
 alias so='socli -isq'
 alias ports='lsof -i -P -n | grep LISTEN'
+alias ne=neofetch
 
 [ -f ~/.bashrc ] && source ~/.bashrc
-source /usr/local/opt/chruby/share/chruby/chruby.sh
-source /usr/local/opt/chruby/share/chruby/auto.sh
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
