@@ -1,4 +1,5 @@
 set nocompatible              " be iMproved, required
+set t_vb=                     " disable flicker
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
